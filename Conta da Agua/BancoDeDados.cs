@@ -26,7 +26,7 @@ namespace Conta_da_Agua
         private static void Initialize()
         {
             //server = "localhost";
-            server = "10.200.119.115";
+            server = "10.200.116.221";
             //database = "connectcsharptomysql";
             database = "SENAI_DB";
             //uid = "username";
