@@ -8,9 +8,10 @@ namespace Conta_da_Agua
 {
     class Cadastro
     {
-        public bool EfetuaCadastro()
+        /*public bool EfetuaCadastro()
         {
 
         }
+        */
     }
 }
