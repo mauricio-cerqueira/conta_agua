@@ -70,6 +70,7 @@
             this.textBoxMedidor.Size = new System.Drawing.Size(136, 20);
             this.textBoxMedidor.TabIndex = 2;
             this.textBoxMedidor.Text = "2";
+            this.textBoxMedidor.TextChanged += new System.EventHandler(this.textBoxMedidor_TextChanged);
             // 
             // labelMedidor
             // 
@@ -97,6 +98,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(139, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -113,6 +115,7 @@
             this.textBoxDiaNota.Name = "textBoxDiaNota";
             this.textBoxDiaNota.Size = new System.Drawing.Size(32, 20);
             this.textBoxDiaNota.TabIndex = 7;
+            this.textBoxDiaNota.TextChanged += new System.EventHandler(this.textBoxDiaNota_TextChanged);
             // 
             // textBoxMesNota
             // 
@@ -120,6 +123,7 @@
             this.textBoxMesNota.Name = "textBoxMesNota";
             this.textBoxMesNota.Size = new System.Drawing.Size(32, 20);
             this.textBoxMesNota.TabIndex = 8;
+            this.textBoxMesNota.TextChanged += new System.EventHandler(this.textBoxMesNota_TextChanged);
             // 
             // textBoxAnoNota
             // 
@@ -127,6 +131,7 @@
             this.textBoxAnoNota.Name = "textBoxAnoNota";
             this.textBoxAnoNota.Size = new System.Drawing.Size(63, 20);
             this.textBoxAnoNota.TabIndex = 9;
+            this.textBoxAnoNota.TextChanged += new System.EventHandler(this.textBoxAnoNota_TextChanged);
             // 
             // labelDia
             // 
