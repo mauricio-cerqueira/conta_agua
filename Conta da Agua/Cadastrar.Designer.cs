@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxNome = new System.Windows.Forms.TextBox();
+            this.textBoxCpf = new System.Windows.Forms.TextBox();
+            this.textBoxEndereco = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.CadastroNome = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxMedidor = new System.Windows.Forms.TextBox();
             this.CadastroCpf = new System.Windows.Forms.Label();
             this.CadastroEndereco = new System.Windows.Forms.Label();
             this.CadastroEmail = new System.Windows.Forms.Label();
@@ -41,34 +41,34 @@
             this.buttonCadastrarUsuario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(275, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxNome.Location = new System.Drawing.Point(12, 114);
+            this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.Size = new System.Drawing.Size(275, 20);
+            this.textBoxNome.TabIndex = 0;
+            this.textBoxNome.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // textBoxCpf
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 200);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(275, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBoxCpf.Location = new System.Drawing.Point(12, 200);
+            this.textBoxCpf.Name = "textBoxCpf";
+            this.textBoxCpf.Size = new System.Drawing.Size(275, 20);
+            this.textBoxCpf.TabIndex = 1;
             // 
-            // textBox3
+            // textBoxEndereco
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 283);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(275, 20);
-            this.textBox3.TabIndex = 2;
+            this.textBoxEndereco.Location = new System.Drawing.Point(12, 283);
+            this.textBoxEndereco.Name = "textBoxEndereco";
+            this.textBoxEndereco.Size = new System.Drawing.Size(275, 20);
+            this.textBoxEndereco.TabIndex = 2;
             // 
-            // textBox4
+            // textBoxEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 368);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(275, 20);
-            this.textBox4.TabIndex = 3;
+            this.textBoxEmail.Location = new System.Drawing.Point(12, 368);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(275, 20);
+            this.textBoxEmail.TabIndex = 3;
             // 
             // CadastroNome
             // 
@@ -79,12 +79,12 @@
             this.CadastroNome.TabIndex = 4;
             this.CadastroNome.Text = "Nome";
             // 
-            // textBox5
+            // textBoxMedidor
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 459);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(275, 20);
-            this.textBox5.TabIndex = 5;
+            this.textBoxMedidor.Location = new System.Drawing.Point(12, 459);
+            this.textBoxMedidor.Name = "textBoxMedidor";
+            this.textBoxMedidor.Size = new System.Drawing.Size(275, 20);
+            this.textBoxMedidor.TabIndex = 5;
             // 
             // CadastroCpf
             // 
@@ -142,12 +142,12 @@
             this.Controls.Add(this.CadastroEmail);
             this.Controls.Add(this.CadastroEndereco);
             this.Controls.Add(this.CadastroCpf);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBoxMedidor);
             this.Controls.Add(this.CadastroNome);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textBoxEndereco);
+            this.Controls.Add(this.textBoxCpf);
+            this.Controls.Add(this.textBoxNome);
             this.Name = "Cadastrar";
             this.Text = "Cadastrar";
             this.ResumeLayout(false);
@@ -157,12 +157,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxNome;
+        private System.Windows.Forms.TextBox textBoxCpf;
+        private System.Windows.Forms.TextBox textBoxEndereco;
+        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label CadastroNome;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxMedidor;
         private System.Windows.Forms.Label CadastroCpf;
         private System.Windows.Forms.Label CadastroEndereco;
         private System.Windows.Forms.Label CadastroEmail;
