@@ -20,8 +20,15 @@ namespace Conta_da_Agua
         [STAThread]
         private void button1_Click(object sender, EventArgs e)
         {
-            WindowsManager.main.Show();
-            Hide();
+            int senha;
+            if (int.TryParse(LoginSenha.Text, out senha))
+            {
+                if (TelaLogin.EfetuaCadastro(LoginNome.Text, senha))
+                {
+                    WindowsManager.main.Show();
+                    Hide();
+                }
+            }
         }
 
         private void Login_Load(object sender, EventArgs e)

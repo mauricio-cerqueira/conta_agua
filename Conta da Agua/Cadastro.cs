@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient
+using MySql.Data.MySqlClient;
 
 namespace Conta_da_Agua
 {
-    class Cadastro
+    public class Cadastro
     {
-        public void Cadastro(string nome)
+        public void CadastroUsuario(string nome)
         {
             string querry = $"INSERT INTO USUARIO(NOME, ENDERECO, CPF) value ({nome}, idade)";
             if(BancoDeDados.OpenConnection() == true)

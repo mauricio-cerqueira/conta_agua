@@ -14,10 +14,10 @@ namespace Conta_da_Agua
         [STAThread]
         static void Main()
         {
+            BancoDeDados.DBConnect();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
-            BancoDeDados.DBConnect();
         }
     }
 }

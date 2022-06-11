@@ -29,7 +29,7 @@ namespace Conta_da_Agua
             //server = "localhost";
             server = "10.200.119.115";
             //database = "connectcsharptomysql";
-            database = "SENAI_DB";
+            database = "Conta água";
             //uid = "username";
             uid = "admin";
             //password = "password";

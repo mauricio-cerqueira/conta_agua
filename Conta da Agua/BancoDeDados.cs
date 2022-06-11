@@ -28,7 +28,7 @@ namespace Conta_da_Agua
             //server = "localhost";
             server = "10.200.116.221";
             //database = "connectcsharptomysql";
-            database = "SENAI_DB";
+            database = "Conta água";
             //uid = "username";
             uid = "admin";
             //password = "password";
@@ -41,7 +41,6 @@ namespace Conta_da_Agua
             {
                 conn = new MySqlConnection();
                 conn.ConnectionString = myConnectionString;
-                //conn.Open();
             }
             catch (MySqlException ex)
             {

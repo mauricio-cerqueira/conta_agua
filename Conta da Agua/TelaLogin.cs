@@ -7,20 +7,27 @@ using MySql.Data.MySqlClient;
 
 namespace Conta_da_Agua
 {
-    class TelaLogin
+    public static class TelaLogin
     {
-        public bool EfetuaCadastro(string nome, int senha)
+        public static bool EfetuaCadastro(string nome, int senha)
         {
-            string querry = $"SELECT nome, cod_funcionario AS 'senha' FROM FUNCIONARIO where nome = '{nome}' and senha = {senha}";
+            string querry = $"SELECT nome, cod_funcionario FROM FUNCIONARIO where nome = '{nome}' and cod_funcionario = {senha}";
 
             if (BancoDeDados.OpenConnection() == true)
             {
                 MySqlCommand cmd = new MySqlCommand(querry, BancoDeDados.conn);
-                MySqlDataReader reader = cmd.ExecuteReader();
-                if(reader)
+                if (cmd.ExecuteScalar() != null)
+                {
+                    BancoDeDados.CloseConnection();
+                    return true;
+                }
+                else
+                {
+                    BancoDeDados.CloseConnection();
+                    return false;
+                }
             }
-
-        }
-        
+            return false;
+        }        
     }
 }
