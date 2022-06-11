@@ -16,6 +16,7 @@ namespace Conta_da_Agua
             this.ano = ano;
 
         }
+        public float valor;
         public int medidor;
         public float consumo;
         public string dia;

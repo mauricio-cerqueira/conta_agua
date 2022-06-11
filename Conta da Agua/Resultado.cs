@@ -12,15 +12,31 @@ namespace Conta_da_Agua
 {
     public partial class Resultado : Form
     {
-        public Resultado()
+        public Resultado(resultadocontaagua resultado)
         {
+            string newLine = Environment.NewLine;
+            UserInfos user = BancoDeDados.InfoUsuario(resultado.medidor);
+            string textToDisplay = $"Nome: {user.nome} {newLine}" +
+                $"CPF: {user.cpf} {newLine}" +
+                $"Endereço: {user.endereco} {newLine} {newLine}" +
+                $"     CORSON {newLine} {newLine}" +
+                $"Valor da conta: {resultado.valor}{newLine}" +
+                $"Medição feita dia: {resultado.dia}/{resultado.mes}/{resultado.ano}{newLine}" +
+                $"Consumo total de {resultado.consumo}m³";
+
             InitializeComponent();
+            textBoxResultado.Text = textToDisplay;
         }
 
         private void buttonVolta_Click(object sender, EventArgs e)
         {
             WindowsManager.main.Show();
-            WindowsManager.resultado.Hide();
+            Hide();
+        }
+
+        private void textBoxResultado_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

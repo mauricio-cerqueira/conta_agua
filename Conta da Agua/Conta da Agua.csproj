@@ -137,6 +137,7 @@
     <Compile Include="Resultado.Designer.cs">
       <DependentUpon>Resultado.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInfos.cs" />
     <Compile Include="WindowsManager.cs" />
     <EmbeddedResource Include="Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>

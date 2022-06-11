@@ -37,7 +37,8 @@ namespace Conta_da_Agua
 
                 if (float.TryParse(textBox1.Text, out consumo)) {
                     resultadocontaagua medidor = GerarConsumo.resultado(medidorr, consumo, textBoxDiaNota.Text, textBoxMesNota.Text, textBoxAnoNota.Text);
-                    WindowsManager.resultado.Show();
+                    Resultado resultWindow = new Resultado(medidor);
+                    resultWindow.Show();
                     WindowsManager.main.Hide();
                 }
             }

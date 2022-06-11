@@ -109,5 +109,23 @@ namespace Conta_da_Agua
 
             return cod;
         }
+
+        public static UserInfos InfoUsuario(int medidor)
+        {
+            string querry = $"SELECT USUARIO.nome, USUARIO.cpf, USUARIO.endereco, USUARIO.email FROM USUARIO INNER JOIN MEDIDOR ON USUARIO.cod_usuario = MEDIDOR.cod_usuario where cod_medidor = {medidor}";
+
+            if(OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(querry, conn);
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                UserInfos usuario = new UserInfos(reader["nome"].ToString(), reader["cpf"].ToString(), reader["endereco"].ToString(), reader["email"].ToString());
+                CloseConnection();
+                return usuario;
+
+            }
+            return null;
+        }
     }
 }

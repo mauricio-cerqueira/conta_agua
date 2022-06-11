@@ -14,8 +14,8 @@ namespace Conta_da_Agua
 
             resultadocontaagua conta = new resultadocontaagua(medidor, consumo, dia, mes, ano);
             int codUsuario = BancoDeDados.GetCodUsuario(medidor);
-            float valor = ValorContaAgua(consumo);
-            string querry = $"INSERT INTO HISTORICO(`cod_usuario`, `status`, `ValordaConta`, `data`, `consumo`, `cod_funcionario`) VALUES ('{codUsuario}' , '0', '{valor.ToString(CultureInfo.CreateSpecificCulture("en-US"))}', '{ano}/{mes}/{dia}' , '{consumo}', '{BancoDeDados.funcAtual}');";
+            conta.valor = ValorContaAgua(consumo);
+            string querry = $"INSERT INTO HISTORICO(`cod_usuario`, `status`, `ValordaConta`, `data`, `consumo`, `cod_funcionario`) VALUES ('{codUsuario}' , '0', '{conta.valor.ToString(CultureInfo.CreateSpecificCulture("en-US"))}', '{ano}/{mes}/{dia}' , '{consumo}', '{BancoDeDados.funcAtual}');";
 
             if (BancoDeDados.OpenConnection() == true) {
 

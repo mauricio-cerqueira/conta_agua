@@ -41,6 +41,7 @@
             this.textBoxResultado.ReadOnly = true;
             this.textBoxResultado.Size = new System.Drawing.Size(361, 453);
             this.textBoxResultado.TabIndex = 0;
+            this.textBoxResultado.TextChanged += new System.EventHandler(this.textBoxResultado_TextChanged);
             // 
             // buttonVolta
             // 
