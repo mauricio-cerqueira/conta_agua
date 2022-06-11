@@ -10,6 +10,7 @@ namespace Conta_da_Agua
 {
     class BancoDeDados
     {
+        public static int funcAtual;
         public static MySqlConnection conn;
         private static string server;
         private static string database;
@@ -78,7 +79,7 @@ namespace Conta_da_Agua
                     return false;
                 }
             }
-            return false;
+            return true;
         }
         //Close connection
         public static bool CloseConnection()
@@ -93,6 +94,20 @@ namespace Conta_da_Agua
                 MessageBox.Show(ex.Message);
                 return false;
             }
+        }
+
+        public static int GetCodUsuario(int medidor)
+        {
+            string querry = $"SELECT cod_usuario FROM MEDIDOR where cod_medidor = {medidor}";
+            int cod = 0;
+            if(OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(querry, conn);
+                cod = int.Parse(cmd.ExecuteScalar().ToString());
+                CloseConnection();
+            }
+
+            return cod;
         }
     }
 }

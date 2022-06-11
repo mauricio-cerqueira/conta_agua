@@ -107,7 +107,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Consumo m²";
+            this.label1.Text = "Consumo m³";
             // 
             // textBoxDiaNota
             // 
