@@ -17,6 +17,7 @@ namespace Conta_da_Agua
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
+            BancoDeDados.DBConnect();
         }
     }
 }
