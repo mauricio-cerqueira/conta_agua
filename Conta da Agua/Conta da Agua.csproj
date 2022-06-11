@@ -113,6 +113,7 @@
       <DependentUpon>Cadastrar.cs</DependentUpon>
     </Compile>
     <Compile Include="Cadastro.cs" />
+    <Compile Include="TelaLogin.cs" />
     <Compile Include="Exemplo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

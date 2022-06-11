@@ -19,8 +19,14 @@ namespace Conta_da_Agua
 
         private void buttonCadastrarUsuario_Click(object sender, EventArgs e)
         {
+            Cadastro.função(textBox1.Text)
             WindowsManager.main.Show();
             WindowsManager.cadastrar.Hide();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

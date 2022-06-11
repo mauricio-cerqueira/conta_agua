@@ -10,7 +10,7 @@ namespace Conta_da_Agua
 {
     class BancoDeDados
     {
-        private static MySqlConnection conn;
+        public static MySqlConnection conn;
         private static string server;
         private static string database;
         private static string uid;
@@ -80,6 +80,20 @@ namespace Conta_da_Agua
                 }
             }
             return false;
+        }
+        //Close connection
+        public static bool CloseConnection()
+        {
+            try
+            {
+                conn.Close();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
         }
     }
 }
